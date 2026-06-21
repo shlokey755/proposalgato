@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proposal</title>
     <style>
-        /* Modern Reset */
+        
         * {
             box-sizing: border-box;
             margin: 0;
@@ -17,7 +17,7 @@
             font-family: 'Quicksand', 'Nunito', system-ui, -apple-system, sans-serif;
             text-align: center;
             background-image: url("bg/haha.png");
-            background-size: cover; /* Added so initial background fits screen perfectly */
+            background-size: cover; 
             background-position: center;
             background-attachment: fixed;
             transition: background-image 0.3s ease-in-out;
@@ -30,7 +30,7 @@
             min-height: 100vh;
         }
 
-        /* Responsive Nav Bar - Upgraded to Glassmorphism */
+        
         nav {
             border-radius: 20px;
             width: 100%;
@@ -49,7 +49,7 @@
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
 
-        /* Responsive Image Container */
+        
         .img-container {
             width: 100%;
             max-width: 400px;
@@ -63,9 +63,10 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            
         }
 
-        /* Button Positioning Box */
+        
         .btn-group {
             display: flex;
             gap: 15px;
@@ -74,7 +75,7 @@
             justify-content: center;
         }
 
-        /* Responsive Custom Glass Buttons */
+        
         .choice-btn {
             flex: 1;
             font-family: 'Quicksand', 'Nunito', system-ui, -apple-system, sans-serif;
@@ -104,7 +105,7 @@
 
         .reset-btn {
             position: absolute;
-            bottom: 20px;      /* Fixed: Changed from bottom: 20px to top: 20px so it's in the top corner */
+            bottom: 20px;      
             right: 20px;
             flex: none;
             width: auto;
@@ -165,7 +166,7 @@
 
         function yes() {
             // Fixed paths: Added the "icons/" folder prefix so it matches your files!
-            image.src = "icons/bleh.jpg"; 
+            image.src = "icons/bleh.jpg";
             question.textContent = "I knew it >⩊<";
             document.body.style.backgroundImage = "url('bg/yey.png')";
             document.body.style.backgroundSize = "cover";
@@ -173,7 +174,7 @@
             document.body.style.backgroundAttachment = "fixed";
         }
 
-       const sadImages = [
+        const sadImages = [
             "icons/first.jpeg", // Click 1
             "icons/sec.jpeg", // Click 2
             "icons/ples.jpeg", // Click 3
@@ -190,24 +191,21 @@
             "404:'No' has expired.",
             "I crying..."
         ];
-        
+
         let clickCount = 0; // Tracks which click we are on
 
         function handleClickNo() {
-            
             document.body.style.backgroundImage = "url('bg/naw.png')";
             document.body.style.backgroundSize = "cover";
             document.body.style.backgroundPosition = "center";
             document.body.style.backgroundAttachment = "fixed";
 
-            // --- NEW DYNAMIC IMAGE LOGIC ---
-            // Change image based on the current click count, up to the last image
+            
             if (clickCount < sadImages.length) {
                 image.src = sadImages[clickCount];
                 question.textContent = msg[clickCount];
                 clickCount++; // Increase count by 1 for the next click
             }
-            // --------------------------------
 
             if (padding_no > 0) {
                 padding_no = padding_no - 2;
@@ -226,13 +224,16 @@
 
         function reset() {
             question.textContent = "Do you Like me?";
-            // Fixed paths: Restored folder prefix here too
-            image.src = "icons/soapy.jpg"; 
+            image.src = "icons/soapy.jpg";
 
             document.body.style.backgroundImage = "url('bg/haha.png')";
             document.body.style.backgroundSize = "cover";
             document.body.style.backgroundPosition = "center";
             document.body.style.backgroundAttachment = "fixed";
+
+            
+            clickCount = 0; // Reset the click counter back to 0!
+            
 
             padding_no = 12;
             font_no = 24;
