@@ -7,6 +7,9 @@
   <p>
     <strong>Gato</strong>, an incredibly clever and tech-savvy feline, has officially conquered the digital world by building his very own website page. Tired of waiting for his humans to manage his online presence, he took matters into his own paws, batting at the keyboard and mastering code with surprising precision.
   </p>
+  <p>
+    <a href="https://shlokey755.github.io/proposalgato/">Follow this link!!</a>
+  </p>
   
   <p>
     It took a lot of late-night screen time, countless naps directly on the warm laptop, and a healthy dose of curiosity, but he successfully launched his tiny corner of the internet all on his own. Ultimately, Gato's coding debut proves that with enough determination—and perhaps the promise of a few treats—anyone can become a web creator.
@@ -17,4 +20,4 @@
 </div>
 <hr/>
 
-<a href="https://shlokey755.github.io/proposalgato/">Follow this link!!</a>
+
